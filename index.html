@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>МастерОк — платформа для поиска специалистов</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="container">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="#">
+                <span class="icon-text">
+                    <span class="icon">
+                        <i class="fas fa-tools"></i>
+                    </span>
+                    <span class="brand-text">МастерОк</span>
+                </span>
+            </a>
+
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item">Каталог</a>
+                <a class="navbar-item">Как это работает</a>
+                <a class="navbar-item">Контакты</a>
+            </div>
+
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a class="button is-primary">
+                            <strong>Войти</strong>
+                        </a>
+                        <a class="button is-light">
+                            Регистрация
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<section class="hero is-medium">
+    <div class="hero-body">
+        <div class="container has-text-centered">
+            <h1 class="title is-1 has-text-white">
+                Найдите специалиста <br>или получите заказ
+            </h1>
+            <h2 class="subtitle is-4 has-text-white-light">
+                Проверенные мастера, прозрачные цены, никаких скрытых комиссий
+            </h2>
+            <div class="columns is-centered">
+                <div class="column is-half">
+                    <div class="field has-addons">
+                        <div class="control is-expanded">
+                            <input class="input is-large" type="text" placeholder="Что нужно сделать?">
+                        </div>
+                        <div class="control">
+                            <a class="button is-large is-primary">
+                                <span>Найти</span>
+                                <span class="icon">
+                                    <i class="fas fa-search"></i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <h2 class="title has-text-centered">Популярные категории</h2>
+        <div class="columns is-multiline">
+            <div class="column is-one-third">
+                <div class="category-card">
+                    <span class="icon">
+                        <i class="fas fa-hammer"></i>
+                    </span>
+                    <h3 class="title is-4">Ремонт</h3>
+                    <p>Мастера по ремонту квартир и домов</p>
+                </div>
+            </div>
+            <div class="column is-one-third">
+                <div class="category-card">
+                    <span class="icon">
+                        <i class="fas fa-broom"></i>
+                    </span>
+                    <h3 class="title is-4">Уборка</h3>
+                    <p>Клининг и уборка помещений</p>
+                </div>
+            </div>
+            <div class="column is-one-third">
+                <div class="category-card">
+                    <span class="icon">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </span>
+                    <h3 class="title is-4">Обучение</h3>
+                    <p>Репетиторы и курсы</p>
+                </div>
+            </div>
+            <div class="column is-one-third">
+                <div class="category-card">
+                    <span class="icon">
+                        <i class="fas fa-camera"></i>
+                    </span>
+                    <h3 class="title is-4">Фото/Видео</h3>
+                    <p>Фотографы и видеографы</p>
+                </div>
+            </div>
+            <div class="column is-one-third">
+                <div class="category-card">
+                    <span class="icon">
+                        <i class="fas fa-laptop"></i>
+                    </span>
+                    <h3 class="title is-4">IT-услуги</h3>
+                    <p>Программисты, дизайнеры</p>
+                </div>
+            </div>
+            <div class="column is-one-third">
+                <div class="category-card">
+                    <span class="icon">
+                        <i class="fas fa-truck"></i>
+                    </span>
+                    <h3 class="title is-4">Перевозки</h3>
+                    <p>Грузчики и переезды</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section about-section">
+    <div class="container">
+        <div class="columns is-vcentered">
+            <div class="column is-half">
+                <h2 class="title is-2">Почему выбирают нас?</h2>
+                <div class="content">
+                    <p>МастерОк — это платформа, которая объединяет заказчиков и исполнителей на честных условиях.</p>
+                    <ul>
+                        <li>✅ <strong>Проверенные специалисты</strong> — верификация документов</li>
+                        <li>✅ <strong>Безопасная сделка</strong> — деньги замораживаются до завершения работы</li>
+                        <li>✅ <strong>Прозрачные цены</strong> — никаких скрытых комиссий</li>
+                        <li>✅ <strong>Поддержка 24/7</strong> — всегда поможем решить спор</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="column is-half has-text-centered">
+                <img src="https://via.placeholder.com/400x300?text=О+проекте" alt="О проекте" class="box about-image">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <h2 class="title has-text-centered">Как это работает</h2>
+        <div class="columns">
+            <div class="column">
+                <div class="has-text-centered">
+                    <div class="step-number">1</div>
+                    <h3 class="title is-4">Опишите задачу</h3>
+                    <p>Расскажите, что нужно сделать, и укажите бюджет</p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="has-text-centered">
+                    <div class="step-number">2</div>
+                    <h3 class="title is-4">Получите отклики</h3>
+                    <p>Специалисты предлагают свои услуги</p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="has-text-centered">
+                    <div class="step-number">3</div>
+                    <h3 class="title is-4">Выберите лучшего</h3>
+                    <p>Сравните цены и отзывы, сделайте выбор</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section reviews-section">
+    <div class="container">
+        <h2 class="title has-text-centered">Отзывы наших клиентов</h2>
+        <div class="columns">
+            <div class="column">
+                <div class="review-card">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="has-text-weight-bold">Анна, Москва</p>
+                    <p>Нашла отличного мастера по ремонту. Быстро, качественно и недорого. Спасибо!</p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="review-card">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="has-text-weight-bold">Дмитрий, СПб</p>
+                    <p>Как исполнитель — заказы приходят регулярно, комиссия честная. Рекомендую!</p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="review-card">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="has-text-weight-bold">Елена, Казань</p>
+                    <p>Удобная платформа, много специалистов. Быстро нашла репетитора для ребёнка.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="hero is-medium is-primary cta-section">
+    <div class="hero-body">
+        <div class="container has-text-centered">
+            <h2 class="title is-2 has-text-white">Готовы начать?</h2>
+            <h3 class="subtitle is-4 has-text-white-light">Присоединяйтесь к тысячам довольных клиентов и специалистов</h3>
+            <div class="buttons is-centered">
+                <a class="button is-large is-light">
+                    <span>Найти специалиста</span>
+                </a>
+                <a class="button is-large is-outlined is-light">
+                    <span>Стать исполнителем</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="columns">
+            <div class="column is-half">
+                <h4 class="title is-5">МастерОк</h4>
+                <p>Платформа для поиска специалистов с прозрачными условиями.</p>
+                <p>© 2026 МастерОк. Все права защищены.</p>
+            </div>
+            <div class="column">
+                <h4 class="title is-6">Навигация</h4>
+                <ul>
+                    <li><a href="#">Каталог</a></li>
+                    <li><a href="#">Как это работает</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Политика конфиденциальности</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h4 class="title is-6">Контакты</h4>
+                <p><i class="fas fa-envelope"></i> info@mastrok.ru</p>
+                <p><i class="fas fa-phone"></i> 8 (800) 123-45-67</p>
+                <div class="social-icons">
+                    <span class="icon is-medium">
+                        <i class="fab fa-telegram fa-2x"></i>
+                    </span>
+                    <span class="icon is-medium">
+                        <i class="fab fa-vk fa-2x"></i>
+                    </span>
+                    <span class="icon is-medium">
+                        <i class="fab fa-whatsapp fa-2x"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const burger = document.querySelector('.navbar-burger');
+        const menu = document.querySelector('.navbar-menu');
+        
+        burger.addEventListener('click', () => {
+            burger.classList.toggle('is-active');
+            menu.classList.toggle('is-active');
+        });
+    });
+</script>
+
+</body>
+</html>
