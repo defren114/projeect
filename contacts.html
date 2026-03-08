@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты | МастерОк</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="index.html">
+                    <span class="icon-text">
+                        <span class="icon">
+                            <i class="fas fa-tools"></i>
+                        </span>
+                        <span class="brand-text">МастерОк</span>
+                    </span>
+                </a>
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+            <div id="navbarMenu" class="navbar-menu">
+                <div class="navbar-start">
+                    <a class="navbar-item" href="index.html">Главная</a>
+                    <a class="navbar-item" href="index.html#catalog">Каталог</a>
+                    <a class="navbar-item" href="index.html#how-it-works">Как это работает</a>
+                    <a class="navbar-item" href="faq.html">FAQ</a>
+                    <a class="navbar-item" href="contacts.html" style="color: var(--primary-color); font-weight: 500;">Контакты</a>
+                </div>
+                <div class="navbar-end">
+                    <div class="navbar-item">
+                        <div class="buttons">
+                            <a class="button is-primary" id="loginBtn">
+                                <strong>Войти</strong>
+                            </a>
+                            <a class="button is-light" id="registerBtn">
+                                Регистрация
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="contacts-header">
+        <div class="container">
+            <h1 class="title is-1 has-text-white">Контакты</h1>
+            <p class="subtitle is-4 has-text-white-light">Свяжитесь с нами любым удобным способом</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column">
+                    <div class="contact-info-card">
+                        <span class="icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </span>
+                        <h3 class="title is-5">Адрес</h3>
+                        <p>Москва, ул. Тверская, 123<br>Бизнес-центр "Мастер", офис 456</p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="contact-info-card">
+                        <span class="icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </span>
+                        <h3 class="title is-5">Телефон</h3>
+                        <p>8 (800) 123-45-67<br>пн-пт с 9:00 до 20:00</p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="contact-info-card">
+                        <span class="icon">
+                            <i class="fas fa-envelope"></i>
+                        </span>
+                        <h3 class="title is-5">Email</h3>
+                        <p>info@mastrok.ru<br>support@mastrok.ru</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="background-color: var(--background-light);">
+        <div class="container">
+            <div class="columns is-vcentered">
+                <div class="column is-6">
+                    <div class="form-container">
+                        <h2 class="title is-3 mb-4">Напишите нам</h2>
+                        <form id="contactForm">
+                            <div class="field">
+                                <label class="label">Имя</label>
+                                <div class="control has-icons-left">
+                                    <input class="input" type="text" placeholder="Ваше имя" required>
+                                    <span class="icon is-small is-left">
+                                        <i class="fas fa-user"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            
+                            <div class="field">
+                                <label class="label">Email</label>
+                                <div class="control has-icons-left">
+                                    <input class="input" type="email" placeholder="example@email.com" required>
+                                    <span class="icon is-small is-left">
+                                        <i class="fas fa-envelope"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            
+                            <div class="field">
+                                <label class="label">Тема</label>
+                                <div class="control">
+                                    <div class="select is-fullwidth">
+                                        <select required>
+                                            <option value="" disabled selected>Выберите тему</option>
+                                            <option>Вопрос о сервисе</option>
+                                            <option>Сотрудничество</option>
+                                            <option>Жалоба</option>
+                                            <option>Предложение</option>
+                                            <option>Другое</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="field">
+                                <label class="label">Сообщение</label>
+                                <div class="control">
+                                    <textarea class="textarea" placeholder="Ваше сообщение..." rows="5" required></textarea>
+                                </div>
+                            </div>
+                            
+                            <div class="field">
+                                <div class="control">
+                                    <label class="checkbox">
+                                        <input type="checkbox" required>
+                                        Соглашаюсь на обработку персональных данных
+                                    </label>
+                                </div>
+                            </div>
+                            
+                            <div class="field">
+                                <div class="control">
+                                    <button class="button is-primary is-fullwidth" type="submit">
+                                        <span>Отправить сообщение</span>
+                                        <span class="icon">
+                                            <i class="fas fa-paper-plane"></i>
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="column is-6">
+                    <div class="map-container">
+                        <iframe 
+                            src="https://yandex.ru/map-widget/v1/?um=constructor%3A0b8a7d9b8f9e9b6b8f9e9b6b8f9e9b6b8f9e9b6b&source=constructor" 
+                            width="100%" 
+                            height="450" 
+                            frameborder="0"
+                            style="border:0; display: block;">
+                        </iframe>
+                    </div>
+                    
+                    <div class="social-icons has-text-centered mt-5">
+                        <p class="mb-3">Мы в социальных сетях:</p>
+                        <a href="#" class="icon is-large">
+                            <i class="fab fa-telegram fa-3x" style="color: #0088cc;"></i>
+                        </a>
+                        <a href="#" class="icon is-large">
+                            <i class="fab fa-vk fa-3x" style="color: #4a6fa5;"></i>
+                        </a>
+                        <a href="#" class="icon is-large">
+                            <i class="fab fa-whatsapp fa-3x" style="color: #25D366;"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-half">
+                    <h4 class="title is-5">МастерОк</h4>
+                    <p>Платформа для поиска специалистов с прозрачными условиями.</p>
+                    <p>© 2026 МастерОк. Все права защищены.</p>
+                </div>
+                <div class="column">
+                    <h4 class="title is-6">Навигация</h4>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                        <li><a href="#" id="privacyLink">Политика конфиденциальности</a></li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h4 class="title is-6">Контакты</h4>
+                    <p><i class="fas fa-envelope"></i> info@mastrok.ru</p>
+                    <p><i class="fas fa-phone"></i> 8 (800) 123-45-67</p>
+                    <div class="social-icons">
+                        <a href="#" class="icon is-medium">
+                            <i class="fab fa-telegram fa-2x"></i>
+                        </a>
+                        <a href="#" class="icon is-medium">
+                            <i class="fab fa-vk fa-2x"></i>
+                        </a>
+                        <a href="#" class="icon is-medium">
+                            <i class="fab fa-whatsapp fa-2x"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const burger = document.querySelector('.navbar-burger');
+            const menu = document.querySelector('.navbar-menu');
+            
+            if (burger) {
+                burger.addEventListener('click', () => {
+                    burger.classList.toggle('is-active');
+                    menu.classList.toggle('is-active');
+                });
+            }
+            
+            const form = document.getElementById('contactForm');
+            if (form) {
+                form.addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    alert('Спасибо! Ваше сообщение отправлено. Мы ответим вам в ближайшее время.');
+                    form.reset();
+                });
+            }
+        });
+    </script>
+</body>
+</html>

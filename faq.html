@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ | МастерОк</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="index.html">
+                    <span class="icon-text">
+                        <span class="icon">
+                            <i class="fas fa-tools"></i>
+                        </span>
+                        <span class="brand-text">МастерОк</span>
+                    </span>
+                </a>
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+            <div id="navbarMenu" class="navbar-menu">
+                <div class="navbar-start">
+                    <a class="navbar-item" href="index.html">Главная</a>
+                    <a class="navbar-item" href="index.html#catalog">Каталог</a>
+                    <a class="navbar-item" href="index.html#how-it-works">Как это работает</a>
+                    <a class="navbar-item" href="faq.html" style="color: var(--primary-color); font-weight: 500;">FAQ</a>
+                    <a class="navbar-item" href="contacts.html">Контакты</a>
+                </div>
+                <div class="navbar-end">
+                    <div class="navbar-item">
+                        <div class="buttons">
+                            <a class="button is-primary" id="loginBtn">
+                                <strong>Войти</strong>
+                            </a>
+                            <a class="button is-light" id="registerBtn">
+                                Регистрация
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="faq-header">
+        <div class="container">
+            <h1 class="title is-1 has-text-white">Часто задаваемые вопросы</h1>
+            <p class="subtitle is-4 has-text-white-light">Найдите ответы на самые популярные вопросы</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container" style="max-width: 800px;">
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <button class="accordion-button" onclick="toggleAccordion(this)">
+                        Как начать пользоваться сервисом?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
+                <div class="accordion-content">
+                    <div class="accordion-content-inner">
+                        <p>Зарегистрируйтесь на сайте, подтвердите email и начните пользоваться бесплатным тарифом. Все функции доступны сразу после регистрации. Для заказчиков доступен бесплатный поиск специалистов, для исполнителей — бесплатное размещение портфолио.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <button class="accordion-button" onclick="toggleAccordion(this)">
+                        Сколько стоит использование платформы?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
+                <div class="accordion-content">
+                    <div class="accordion-content-inner">
+                        <p>Для заказчиков — бесплатно. Для исполнителей — комиссия всего 5% от суммы заказа при успешном завершении сделки. Это значительно ниже, чем у конкурентов (Профи.ру — 30%, YouDo — 15-20%).</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <button class="accordion-button" onclick="toggleAccordion(this)">
+                        Как обеспечивается безопасность сделки?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
+                <div class="accordion-content">
+                    <div class="accordion-content-inner">
+                        <p>Мы используем механизм безопасной сделки: деньги заказчика замораживаются на счёте платформы и переводятся исполнителю только после подтверждения выполнения работы. Это гарантирует, что специалист получит оплату, а заказчик — качественный результат.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <button class="accordion-button" onclick="toggleAccordion(this)">
+                        Есть ли мобильное приложение?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
+                <div class="accordion-content">
+                    <div class="accordion-content-inner">
+                        <p>Да, наше приложение доступно в App Store и Google Play. Все функции синхронизируются между веб-версией и приложением. Вы можете общаться с заказчиками, получать уведомления и управлять заказами с телефона.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <button class="accordion-button" onclick="toggleAccordion(this)">
+                        Как стать исполнителем на платформе?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
+                <div class="accordion-content">
+                    <div class="accordion-content-inner">
+                        <p>Зарегистрируйтесь, заполните профиль, добавьте портфолио и пройдите верификацию документов. После этого ваша анкета станет доступна заказчикам. Мы рекомендуем указать реальные фото и подробное описание услуг — это повышает шансы на получение заказов.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <button class="accordion-button" onclick="toggleAccordion(this)">
+                        Как оставить отзыв о специалисте?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
+                <div class="accordion-content">
+                    <div class="accordion-content-inner">
+                        <p>После завершения заказа вы получите уведомление с предложением оставить отзыв. Вы можете оценить специалиста по 5-балльной шкале и написать комментарий. Все отзывы проходят модерацию и публикуются только от реальных заказчиков.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <button class="accordion-button" onclick="toggleAccordion(this)">
+                        Что делать, если возник спор с исполнителем?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
+                <div class="accordion-content">
+                    <div class="accordion-content-inner">
+                        <p>В случае спорной ситуации вы можете обратиться в службу поддержки через форму на сайте или по телефону. Наша команда рассмотрит обе стороны и примет решение. При использовании безопасной сделки деньги не будут переведены до разрешения спора.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="background-color: var(--background-light);">
+        <div class="container has-text-centered">
+            <h2 class="title is-3">Не нашли ответ на свой вопрос?</h2>
+            <p class="subtitle is-5 mb-5">Свяжитесь с нами, и мы поможем</p>
+            <a href="contacts.html" class="button is-primary is-large">
+                <span>Написать нам</span>
+                <span class="icon">
+                    <i class="fas fa-envelope"></i>
+                </span>
+            </a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-half">
+                    <h4 class="title is-5">МастерОк</h4>
+                    <p>Платформа для поиска специалистов с прозрачными условиями.</p>
+                    <p>© 2026 МастерОк. Все права защищены.</p>
+                </div>
+                <div class="column">
+                    <h4 class="title is-6">Навигация</h4>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                        <li><a href="#" id="privacyLink">Политика конфиденциальности</a></li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h4 class="title is-6">Контакты</h4>
+                    <p><i class="fas fa-envelope"></i> info@mastrok.ru</p>
+                    <p><i class="fas fa-phone"></i> 8 (800) 123-45-67</p>
+                    <div class="social-icons">
+                        <a href="#" class="icon is-medium">
+                            <i class="fab fa-telegram fa-2x"></i>
+                        </a>
+                        <a href="#" class="icon is-medium">
+                            <i class="fab fa-vk fa-2x"></i>
+                        </a>
+                        <a href="#" class="icon is-medium">
+                            <i class="fab fa-whatsapp fa-2x"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const burger = document.querySelector('.navbar-burger');
+            const menu = document.querySelector('.navbar-menu');
+            
+            if (burger) {
+                burger.addEventListener('click', () => {
+                    burger.classList.toggle('is-active');
+                    menu.classList.toggle('is-active');
+                });
+            }
+        });
+        
+        function toggleAccordion(button) {
+            const content = button.parentElement.nextElementSibling;
+            button.classList.toggle('active');
+            
+            if (button.classList.contains('active')) {
+                content.style.maxHeight = content.scrollHeight + 'px';
+            } else {
+                content.style.maxHeight = '0';
+            }
+        }
+    </script>
+</body>
+</html>
