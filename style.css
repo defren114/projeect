@@ -42,8 +42,8 @@
     background-color: var(--secondary-color);
 }
 
-#catalog {
-    background-color: var(--background-light);
+section#catalog.section {
+    background-color: var(--background-light) !important;
 }
 
 .category-card {
