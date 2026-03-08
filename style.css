@@ -23,8 +23,15 @@
 
 .hero {
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-    color: white;
+    color: #ffffff;
     border-radius: 0 0 20px 20px;
+    min-height: 400px;
+}
+
+.hero .title,
+.hero .subtitle {
+    color: #ffffff !important;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
 }
 
 .button.is-primary {
@@ -139,6 +146,12 @@
     text-align: center;
     margin-bottom: 2rem;
     border-radius: 0 0 20px 20px;
+}
+
+.contacts-header .title,
+.contacts-header .subtitle {
+    color: #ffffff !important;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
 }
 
 .contact-info-card {
@@ -271,6 +284,17 @@
 .search-box {
     max-width: 500px;
     margin: 2rem auto;
+}
+
+.input.is-danger,
+.textarea.is-danger {
+    border-color: #f14668 !important;
+}
+
+.help.is-danger {
+    color: #f14668 !important;
+    font-size: 0.85rem;
+    margin-top: 0.25rem;
 }
 
 @media screen and (max-width: 768px) {
