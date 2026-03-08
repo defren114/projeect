@@ -7,8 +7,17 @@
     --background-light: #f8f9fa;
 }
 
+body {
+    background-color: #ffffff;
+}
+
 .navbar {
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    background-color: #ffffff !important;
+}
+
+.navbar-item {
+    color: var(--text-dark) !important;
 }
 
 .brand-text {
@@ -42,8 +51,17 @@
     background-color: var(--secondary-color);
 }
 
-section#catalog.section {
+.section {
+    background-color: #ffffff;
+}
+
+#catalog.section {
     background-color: var(--background-light) !important;
+}
+
+#catalog .title {
+    color: var(--text-dark) !important;
+    font-weight: 700 !important;
 }
 
 .category-card {
@@ -51,17 +69,17 @@ section#catalog.section {
     text-align: center;
     padding: 2rem 1rem;
     border-radius: 10px;
-    background: white;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    background: #ffffff !important;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12) !important;
     height: 100%;
     cursor: pointer;
-    border: 2px solid transparent;
+    border: 2px solid #e0e6ed !important;
 }
 
 .category-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 12px 30px rgba(74, 111, 165, 0.2);
-    border-color: var(--primary-color);
+    box-shadow: 0 15px 35px rgba(74, 111, 165, 0.25) !important;
+    border-color: var(--primary-color) !important;
 }
 
 .category-card .icon {
@@ -72,12 +90,17 @@ section#catalog.section {
 }
 
 .category-card h3 {
-    color: var(--text-dark);
+    color: var(--text-dark) !important;
     margin-bottom: 0.5rem;
 }
 
 .category-card p {
-    color: var(--text-light);
+    color: var(--text-light) !important;
+}
+
+#about .title {
+    color: var(--text-dark) !important;
+    font-weight: 700 !important;
 }
 
 .about-section {
@@ -102,8 +125,22 @@ section#catalog.section {
     margin: 0 auto 1rem;
 }
 
+#how-it-works .title {
+    color: var(--text-dark) !important;
+    font-weight: 700 !important;
+}
+
+#how-it-works .content {
+    color: var(--text-light) !important;
+}
+
 .reviews-section {
     background-color: var(--background-light);
+}
+
+#reviews .title {
+    color: var(--text-dark) !important;
+    font-weight: 700 !important;
 }
 
 .review-card {
@@ -124,6 +161,10 @@ section#catalog.section {
     margin-right: 0.2rem;
 }
 
+.review-card p {
+    color: var(--text-dark) !important;
+}
+
 .cta-section {
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)) !important;
 }
@@ -135,13 +176,26 @@ section#catalog.section {
     border-top: 3px solid var(--primary-color);
 }
 
+.footer .title {
+    color: var(--text-dark) !important;
+    font-weight: 600 !important;
+}
+
+.footer p {
+    color: var(--text-light) !important;
+}
+
 .footer a {
-    color: var(--text-dark);
+    color: var(--text-dark) !important;
     text-decoration: none;
 }
 
 .footer a:hover {
     color: var(--primary-color);
+}
+
+.footer ul li {
+    color: var(--text-dark) !important;
 }
 
 .social-icons {
@@ -195,12 +249,28 @@ section#catalog.section {
     margin-bottom: 1rem;
 }
 
+.contact-info-card h3 {
+    color: var(--text-dark) !important;
+}
+
+.contact-info-card p {
+    color: var(--text-light) !important;
+}
+
 .form-container {
     background: white;
     border-radius: 10px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.1);
     padding: 2rem;
     border: 1px solid #e0e0e0;
+}
+
+.form-container .title {
+    color: var(--text-dark) !important;
+}
+
+.form-container .label {
+    color: var(--text-dark) !important;
 }
 
 .map-container {
